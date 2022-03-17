@@ -6,10 +6,9 @@ app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
+"""
+Welcome to COMP1003J!
+"""
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
